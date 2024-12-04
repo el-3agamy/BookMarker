@@ -1,0 +1,154 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+  
+  :root {
+    --main-color: #212529;
+    --btn-bg: #d1512d;
+    --btn-hover: #bb4120;
+  }
+  
+
+  body {
+    background-color: #f7ecde;
+    font-family: "PT Sans Caption", sans-serif;
+  }
+
+
+  .main-color {
+    color: var(--main-color);
+  }
+  
+  .fw-600 {
+    font-weight: 600;
+  }
+  .fw-700 {
+    font-weight: 700;
+  }
+  .fw-800 {
+    font-weight: 800;
+  }
+  
+  /*  **************************************   */
+
+  .bookmark-content {
+    padding-bottom: 25px;
+    border-bottom: 2px dotted #000;
+  }
+  .bookmark-content h1 {
+    font-size: 50px;
+    font-weight: 500;
+    font-family: "Pacifico", cursive;
+    width: fit-content;
+    color: var(--main-color);
+    position: relative;
+    margin-bottom: 80px;
+  }
+  
+  .bookmark-content h1::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 35%;
+    left: 0;
+    bottom: 0;
+    background-color: #fec260;
+    z-index: -1;
+    transition: all 0.4s;
+  }
+  .bookmark-content h1:hover:before {
+    height: 70%;
+  }
+  
+  .bookmark-content p {
+    font-size: 25px;
+    font-weight: 500;
+    font-family: "Righteous", sans-serif;
+    text-align: center;
+    background-image: linear-gradient(
+      90deg,
+      rgba(63, 165, 91, 1) 39%,
+      rgba(179, 172, 73, 1) 65%
+    );
+    background-clip: text;
+    color: transparent;
+    border-top: 2px dotted #000;
+  }
+  
+  .bookmark-content .form-control:focus {
+    border-color: #d99c39;
+    box-shadow: 0 0 0 0.25rem rgba(254, 194, 96, 0.4);
+  }
+  
+  .bookmark-content .btn-danger {
+    background-color: var(--btn-bg);
+    border-color: var(--btn-bg);
+  }
+  .bookmark-content .btn-danger:hover {
+    background-color: var(--btn-hover);
+    border-color: var(--btn-hover);
+  }
+  
+  table .btn-success {
+    --bs-btn-bg: #9eb23b;
+    --bs-btn-border-color: #9eb23b;
+    --bs-btn-hover-bg: #8a9e23;
+    --bs-btn-hover-border-color: #6e8018;
+  }
+  table .btn-danger {
+    --bs-btn-bg: #eb1d36;
+    --bs-btn-border-color: #eb1d36;
+    --bs-btn-hover-bg: #d30820;
+    --bs-btn-hover-border-color: #ba081d;
+  }
+  
+  .valid-input:focus {
+    border-color: #198754 !important;
+    box-shadow: 0 0 0 0.25rem rgba(25, 135, 84, 0.25) !important;
+  }
+  .invalid-input:focus {
+    border-color: #dc3545 !important;
+    box-shadow: 0 0 0 0.25rem rgba(220, 53, 69, 0.25) !important;
+  }
+  
+  /*!  */
+  
+  .popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 500px;
+    padding: 30px;
+    background-color: white;
+    border: 1px solid #ccc;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .popup-content {
+    margin-top: 10px;
+    font-size: 0.9rem;
+  }
+  
+  .close-btn {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  
