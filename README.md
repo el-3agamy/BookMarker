@@ -1,4 +1,5 @@
-This simple and responsive app helps users:
+This is a Bookmarker App to deploy a CRUD Operations :
+This  responsive app helps users:
 -Add a website's name and link.
 -Save it for later.
 -Quickly visit websites.
@@ -13,3 +14,5 @@ Technologies used:
 -JavaScript 
 -Bootstrap 
 -LocalStorage to keep data saved, even after closing the browser.
+
+DEMO :https://el-3agamy.github.io/BookMarker/
